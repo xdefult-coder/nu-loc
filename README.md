@@ -10,7 +10,7 @@ Split the canvas into separate downloadable files and create a ZIP here.
 
 Or produce a tiny setup.sh to build and run with Docker Compose.
 
-git clone https://github.com/yourname/kali-location-tracker.git
+git clone https://github.com/xdefult-coder/nu-loc.git
 cd kali-location-tracker
 go mod tidy
 go run server.go
