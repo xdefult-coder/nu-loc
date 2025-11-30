@@ -9,3 +9,21 @@ Agar chaho to main abhi:
 Split the canvas into separate downloadable files and create a ZIP here.
 
 Or produce a tiny setup.sh to build and run with Docker Compose.
+
+git clone https://github.com/yourname/kali-location-tracker.git
+cd kali-location-tracker
+go mod tidy
+go run server.go
+go run client.go
+xdg-open http://127.0.0.1:5000/
+docker build -t kali-locator .
+docker run -p 5000:5000 kali-locator
+docker compose up --build
+
+
+git init
+git add .
+git commit -m "Kali Linux Location Tracker (Go)"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+git push -u origin main
